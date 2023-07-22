@@ -70,6 +70,8 @@ struct GetAWalletView: View {
     }
 }
 
+#if DEBUG
+
 struct GetAWalletView_Previews: PreviewProvider {
     
     static var previews: some View {
@@ -82,3 +84,6 @@ struct GetAWalletView_Previews: PreviewProvider {
         .environment(\.projectId, Secrets.load().projectID)
     }
 }
+
+#endif
+
